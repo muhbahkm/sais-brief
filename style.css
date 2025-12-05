@@ -1,0 +1,88 @@
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #1b1b1b;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #0f2c3a, #1b3f55);
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 15px;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.header-title p {
+    margin: 0;
+    opacity: .8;
+}
+
+.loader {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    color: #333;
+}
+
+.brief-container {
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+}
+
+.brief-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f2c3a;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b3f55;
+}
+
+.brief-text {
+    margin-bottom: 10px;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+.audio-box {
+    background: #eef3f6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.audio-expert-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    margin-top: 30px;
+}
