@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sais-brief.netlify.app/sitemap.xml

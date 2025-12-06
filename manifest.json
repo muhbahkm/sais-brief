@@ -1,0 +1,26 @@
+{
+  "name": "موجزات سائس - SAIS Briefs",
+  "short_name": "SAIS Brief",
+  "description": "منصة تحليلية متخصصة تقدم قراءة نخبوية للأحداث اليمنية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f2c3a",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "assets/sais-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/sais-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

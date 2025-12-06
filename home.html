@@ -4,26 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موجزات سائس | SAIS Briefs</title>
-
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="منصة موجزات تحليلية نخبوية للأحداث اليمنية - قراءات سياسية واقتصادية وأمنية معمقة">
+    <meta name="keywords" content="اليمن، تحليل سياسي، موجزات، أخبار اليمن، SAIS">
+    <meta name="author" content="SAIS Brief">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="موجزات سائس | SAIS Briefs">
+    <meta property="og:description" content="منصة موجزات تحليلية نخبوية للأحداث اليمنية">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sais-brief.netlify.app">
+    <meta property="og:image" content="https://sais-brief.netlify.app/assets/sais-logo.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="موجزات سائس">
+    <meta name="twitter:description" content="منصة موجزات تحليلية نخبوية للأحداث اليمنية">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/ibm-plex-sans-arabic.css">
 </head>
 <body>
 
-<header class="header">
-    <img src="assets/sais-logo.png" class="logo">
-    <div class="header-title">
-        <h1>موجزات سائس</h1>
-        <p>قائمة الموجزات التحليلية</p>
+<!-- Navbar ثابت -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">
+            <img src="assets/sais-logo.png" class="navbar-logo" alt="SAIS Logo">
+            <span class="navbar-title">موجزات سائس</span>
+        </div>
+        <div class="navbar-links">
+            <a href="home.html" class="nav-link active">الرئيسية</a>
+            <a href="about.html" class="nav-link">عن المشروع</a>
+        </div>
     </div>
-</header>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">قراءة نخبوية للأحداث اليمنية</h1>
+        <p class="hero-subtitle">موجزات تحليلية عميقة تغطي الأبعاد السياسية والاقتصادية والأمنية</p>
+    </div>
+</section>
+
+<!-- البحث والفلترة -->
+<section class="filters-section">
+    <div class="filters-container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث في الموجزات..." class="search-input">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">الكل</button>
+            <button class="filter-btn" data-category="سياسي">سياسي</button>
+            <button class="filter-btn" data-category="اقتصادي">اقتصادي</button>
+            <button class="filter-btn" data-category="أمني">أمني</button>
+        </div>
+        <div class="sort-dropdown">
+            <select id="sortSelect" class="sort-select">
+                <option value="newest">الأحدث أولاً</option>
+                <option value="oldest">الأقدم أولاً</option>
+                <option value="featured">المميزة أولاً</option>
+            </select>
+        </div>
+    </div>
+</section>
 
 <main id="brief-list" class="brief-list-container">
     <div class="loader">جاري تحميل الموجزات...</div>
 </main>
 
+<!-- Empty State -->
+<div id="emptyState" class="empty-state" style="display: none;">
+    <div class="empty-icon">📭</div>
+    <h3>لا توجد نتائج</h3>
+    <p>جرب تغيير معايير البحث أو الفلترة</p>
+</div>
+
 <footer class="footer">
-    <p>SAIS © 2025</p>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>موجزات سائس</h4>
+            <p>منصة تحليلية متخصصة في الشأن اليمني</p>
+        </div>
+        <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <a href="home.html">الرئيسية</a>
+            <a href="about.html">عن المشروع</a>
+        </div>
+        <div class="footer-section">
+            <h4>تواصل معنا</h4>
+            <p>contact@sais-brief.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © SAIS – 2025</p>
+    </div>
 </footer>
 
 <script src="home.js"></script>
